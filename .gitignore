@@ -1,0 +1,26 @@
+# Entorno virtual
+pipeline/venv/
+pipeline/__pycache__/
+pipeline/**/__pycache__/
+**/*.pyc
+
+# Base de datos y logs (generados en ejecución)
+pipeline/*.db
+pipeline/*.db-journal
+pipeline/logs/
+
+# Secretos — NUNCA subir al repositorio
+pipeline/.env
+
+# Scripts auxiliares de generación (no forman parte del entregable)
+generar_*.py
+celdas_graficos.py
+
+# Directorio de datos temporal
+data/
+
+# PDF de la guía (copyright UCM)
+*.pdf
+
+# macOS
+.DS_Store

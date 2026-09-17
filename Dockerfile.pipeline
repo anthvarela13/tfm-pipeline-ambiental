@@ -1,0 +1,48 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Dockerfile.pipeline
+# Pipeline ETL de Monitorización Ambiental + Dashboard Streamlit
+#
+# USO RECOMENDADO (pipeline + dashboard juntos):
+#   echo 'OPENAQ_API_KEY=tu_key' > pipeline/.env
+#   docker-compose up --build
+#   → Dashboard en http://localhost:8501
+#
+# USO STANDALONE (solo pipeline, sin compose):
+#   docker build -f Dockerfile.pipeline -t pipeline-ambiental .
+#   docker run --rm -e OPENAQ_API_KEY="tu_key" pipeline-ambiental          # ejecución única
+#   docker run -d  -e OPENAQ_API_KEY="tu_key" pipeline-ambiental --daemon  # scheduler continuo
+#
+# USO STANDALONE (solo dashboard):
+#   docker run -p 8501:8501 \
+#     -e DB_PATH=/app/data/biodiversity_monitor.db \
+#     -v $(pwd)/pipeline/biodiversity_monitor.db:/app/data/biodiversity_monitor.db \
+#     --entrypoint streamlit pipeline-ambiental \
+#     run app.py --server.port=8501 --server.address=0.0.0.0 --server.headless=true
+# ─────────────────────────────────────────────────────────────────────────────
+
+FROM python:3.11-slim
+
+# Metadatos
+LABEL maintainer="Anthony Varela <anthvarela@gmail.com>"
+LABEL description="Pipeline ETL de monitorización ambiental — UCM TFM 2025-2026"
+LABEL version="1.0"
+
+# Variables de entorno con valores por defecto seguros
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    OPENAQ_API_KEY=""
+
+WORKDIR /app
+
+# Copiar solo los archivos necesarios del pipeline (excluye venv, logs, .db)
+COPY pipeline/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY pipeline/ .
+
+# Directorio para la base de datos y logs (montable como volumen)
+RUN mkdir -p /app/logs /app/data
+
+# Punto de entrada: admite --now (ejecución única) o --daemon (scheduler)
+ENTRYPOINT ["python", "scheduler.py"]
+CMD ["--now"]

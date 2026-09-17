@@ -1,0 +1,11 @@
+pipeline/venv/
+pipeline/__pycache__/
+pipeline/**/__pycache__/
+pipeline/**/*.pyc
+pipeline/logs/
+pipeline/*.db
+pipeline/*.db-journal
+.DS_Store
+*.ipynb
+generar_*.py
+pipeline/.env

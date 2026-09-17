@@ -1,0 +1,66 @@
+# docker-compose.yml
+# Pipeline ETL de Monitorización Ambiental + Dashboard Streamlit
+# ─────────────────────────────────────────────────────────────────────────────
+#
+# INICIO RÁPIDO:
+#   1. Crea el archivo pipeline/.env con tu API key:
+#        echo 'OPENAQ_API_KEY=tu_key_aqui' > pipeline/.env
+#
+#   2. Construye y arranca ambos servicios:
+#        docker-compose up --build
+#
+#   3. Abre el dashboard en:  http://localhost:8501
+#
+# COMANDOS ÚTILES:
+#   Arrancar en segundo plano:   docker-compose up -d --build
+#   Ver logs del pipeline:       docker-compose logs -f pipeline
+#   Parar todo:                  docker-compose down
+#   Parar y borrar datos:        docker-compose down -v
+# ─────────────────────────────────────────────────────────────────────────────
+
+services:
+
+  # ── ETL Pipeline (scheduler diario a las 02:00 UTC) ──────────────────────
+  pipeline:
+    build:
+      context: .
+      dockerfile: Dockerfile.pipeline
+    image: pipeline-ambiental:latest
+    container_name: pipeline-etl
+    environment:
+      - OPENAQ_API_KEY=a074928ff81091ee283e2c6faf83af67291d654c00e0f8b80490bb5e5eed3561  # demo TFM
+      - DB_PATH=/app/data/biodiversity_monitor.db
+      - LOG_DIR=/app/data/logs
+    volumes:
+      - db_data:/app/data          # volumen compartido con el dashboard
+    command: []                    # sin args = modo daemon (APScheduler cron diario)
+    restart: unless-stopped
+
+  # ── Dashboard Streamlit ────────────────────────────────────────────────────
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.pipeline   # misma imagen, diferente comando
+    image: pipeline-ambiental:latest
+    container_name: pipeline-dashboard
+    environment:
+      - DB_PATH=/app/data/biodiversity_monitor.db
+    volumes:
+      - db_data:/app/data          # lee la misma BD que escribe el pipeline
+    ports:
+      - "8501:8501"                # http://localhost:8501
+    entrypoint: [
+      "streamlit", "run", "app.py",
+      "--server.port=8501",
+      "--server.address=0.0.0.0",
+      "--server.headless=true",
+      "--browser.gatherUsageStats=false"
+    ]
+    restart: unless-stopped
+    depends_on:
+      - pipeline                   # espera a que el pipeline levante primero
+
+# ── Volumen compartido (BD SQLite persistente entre reinicios) ────────────────
+volumes:
+  db_data:
+    name: pipeline-ambiental-data
