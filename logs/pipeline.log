@@ -1,0 +1,274 @@
+2026-09-16 17:07:29 | INFO     | main | ============================================================
+2026-09-16 17:07:29 | INFO     | main | INICIO DEL PIPELINE — 2026-09-16 23:07:29 UTC
+2026-09-16 17:07:29 | INFO     | main | ============================================================
+2026-09-16 17:07:29 | INFO     | database | Base de datos inicializada correctamente en /Users/anthonyvarela/Documents/UCM/FTM/pipeline/biodiversity_monitor.db
+2026-09-16 17:07:29 | INFO     | main | ─── Iniciando ETL: OPENAQ
+2026-09-16 17:07:29 | INFO     | extractor.openaq | OpenAQ → extrayendo datos para São Paulo (BR)
+2026-09-16 17:07:29 | WARNING  | extractor.openaq | OPENAQ_API_KEY no configurada. Regístrate en https://explore.openaq.org/register
+2026-09-16 17:07:30 | WARNING  | extractor.openaq | Intento 1/3 fallido para https://api.openaq.org/v3/locations: 401 Client Error: Unauthorized for url: https://api.openaq.org/v3/locations?coordinates=-23.5505%2C-46.6333&radius=25000&limit=10
+2026-09-16 17:07:32 | WARNING  | extractor.openaq | OPENAQ_API_KEY no configurada. Regístrate en https://explore.openaq.org/register
+2026-09-16 17:07:32 | WARNING  | extractor.openaq | Intento 2/3 fallido para https://api.openaq.org/v3/locations: 401 Client Error: Unauthorized for url: https://api.openaq.org/v3/locations?coordinates=-23.5505%2C-46.6333&radius=25000&limit=10
+2026-09-16 17:07:36 | WARNING  | extractor.openaq | OPENAQ_API_KEY no configurada. Regístrate en https://explore.openaq.org/register
+2026-09-16 17:07:36 | WARNING  | extractor.openaq | Intento 3/3 fallido para https://api.openaq.org/v3/locations: 401 Client Error: Unauthorized for url: https://api.openaq.org/v3/locations?coordinates=-23.5505%2C-46.6333&radius=25000&limit=10
+2026-09-16 17:07:36 | ERROR    | extractor.openaq | Error extrayendo OpenAQ para São Paulo: No se pudo conectar a https://api.openaq.org/v3/locations tras 3 intentos
+2026-09-16 17:07:36 | INFO     | extractor.openaq | OpenAQ → extrayendo datos para Nairobi (KE)
+2026-09-16 17:07:36 | WARNING  | extractor.openaq | OPENAQ_API_KEY no configurada. Regístrate en https://explore.openaq.org/register
+2026-09-16 17:07:36 | WARNING  | extractor.openaq | Intento 1/3 fallido para https://api.openaq.org/v3/locations: 401 Client Error: Unauthorized for url: https://api.openaq.org/v3/locations?coordinates=-1.2921%2C36.8219&radius=25000&limit=10
+2026-09-16 17:07:38 | WARNING  | extractor.openaq | OPENAQ_API_KEY no configurada. Regístrate en https://explore.openaq.org/register
+2026-09-16 17:07:39 | WARNING  | extractor.openaq | Intento 2/3 fallido para https://api.openaq.org/v3/locations: 401 Client Error: Unauthorized for url: https://api.openaq.org/v3/locations?coordinates=-1.2921%2C36.8219&radius=25000&limit=10
+2026-09-16 17:07:43 | WARNING  | extractor.openaq | OPENAQ_API_KEY no configurada. Regístrate en https://explore.openaq.org/register
+2026-09-16 17:07:43 | WARNING  | extractor.openaq | Intento 3/3 fallido para https://api.openaq.org/v3/locations: 401 Client Error: Unauthorized for url: https://api.openaq.org/v3/locations?coordinates=-1.2921%2C36.8219&radius=25000&limit=10
+2026-09-16 17:07:43 | ERROR    | extractor.openaq | Error extrayendo OpenAQ para Nairobi: No se pudo conectar a https://api.openaq.org/v3/locations tras 3 intentos
+2026-09-16 17:07:43 | INFO     | extractor.openaq | OpenAQ → extrayendo datos para Delhi (IN)
+2026-09-16 17:07:43 | WARNING  | extractor.openaq | OPENAQ_API_KEY no configurada. Regístrate en https://explore.openaq.org/register
+2026-09-16 17:07:43 | WARNING  | extractor.openaq | Intento 1/3 fallido para https://api.openaq.org/v3/locations: 401 Client Error: Unauthorized for url: https://api.openaq.org/v3/locations?coordinates=28.6139%2C77.209&radius=25000&limit=10
+2026-09-16 17:07:45 | WARNING  | extractor.openaq | OPENAQ_API_KEY no configurada. Regístrate en https://explore.openaq.org/register
+2026-09-16 17:07:45 | WARNING  | extractor.openaq | Intento 2/3 fallido para https://api.openaq.org/v3/locations: 401 Client Error: Unauthorized for url: https://api.openaq.org/v3/locations?coordinates=28.6139%2C77.209&radius=25000&limit=10
+2026-09-16 17:07:49 | WARNING  | extractor.openaq | OPENAQ_API_KEY no configurada. Regístrate en https://explore.openaq.org/register
+2026-09-16 17:07:50 | WARNING  | extractor.openaq | Intento 3/3 fallido para https://api.openaq.org/v3/locations: 401 Client Error: Unauthorized for url: https://api.openaq.org/v3/locations?coordinates=28.6139%2C77.209&radius=25000&limit=10
+2026-09-16 17:07:50 | ERROR    | extractor.openaq | Error extrayendo OpenAQ para Delhi: No se pudo conectar a https://api.openaq.org/v3/locations tras 3 intentos
+2026-09-16 17:07:50 | INFO     | extractor.openaq | OpenAQ → extrayendo datos para Beijing (CN)
+2026-09-16 17:07:50 | WARNING  | extractor.openaq | OPENAQ_API_KEY no configurada. Regístrate en https://explore.openaq.org/register
+2026-09-16 17:07:50 | WARNING  | extractor.openaq | Intento 1/3 fallido para https://api.openaq.org/v3/locations: 401 Client Error: Unauthorized for url: https://api.openaq.org/v3/locations?coordinates=39.9042%2C116.4074&radius=25000&limit=10
+2026-09-16 17:07:52 | WARNING  | extractor.openaq | OPENAQ_API_KEY no configurada. Regístrate en https://explore.openaq.org/register
+2026-09-16 17:07:52 | WARNING  | extractor.openaq | Intento 2/3 fallido para https://api.openaq.org/v3/locations: 401 Client Error: Unauthorized for url: https://api.openaq.org/v3/locations?coordinates=39.9042%2C116.4074&radius=25000&limit=10
+2026-09-16 17:07:56 | WARNING  | extractor.openaq | OPENAQ_API_KEY no configurada. Regístrate en https://explore.openaq.org/register
+2026-09-16 17:07:56 | WARNING  | extractor.openaq | Intento 3/3 fallido para https://api.openaq.org/v3/locations: 401 Client Error: Unauthorized for url: https://api.openaq.org/v3/locations?coordinates=39.9042%2C116.4074&radius=25000&limit=10
+2026-09-16 17:07:56 | ERROR    | extractor.openaq | Error extrayendo OpenAQ para Beijing: No se pudo conectar a https://api.openaq.org/v3/locations tras 3 intentos
+2026-09-16 17:07:56 | INFO     | extractor.openaq | OpenAQ → extrayendo datos para Los Angeles (US)
+2026-09-16 17:07:56 | WARNING  | extractor.openaq | OPENAQ_API_KEY no configurada. Regístrate en https://explore.openaq.org/register
+2026-09-16 17:07:57 | WARNING  | extractor.openaq | Intento 1/3 fallido para https://api.openaq.org/v3/locations: 401 Client Error: Unauthorized for url: https://api.openaq.org/v3/locations?coordinates=34.0522%2C-118.2437&radius=25000&limit=10
+2026-09-16 17:07:59 | WARNING  | extractor.openaq | OPENAQ_API_KEY no configurada. Regístrate en https://explore.openaq.org/register
+2026-09-16 17:07:59 | WARNING  | extractor.openaq | Intento 2/3 fallido para https://api.openaq.org/v3/locations: 401 Client Error: Unauthorized for url: https://api.openaq.org/v3/locations?coordinates=34.0522%2C-118.2437&radius=25000&limit=10
+2026-09-16 17:08:03 | WARNING  | extractor.openaq | OPENAQ_API_KEY no configurada. Regístrate en https://explore.openaq.org/register
+2026-09-16 17:08:03 | WARNING  | extractor.openaq | Intento 3/3 fallido para https://api.openaq.org/v3/locations: 401 Client Error: Unauthorized for url: https://api.openaq.org/v3/locations?coordinates=34.0522%2C-118.2437&radius=25000&limit=10
+2026-09-16 17:08:03 | ERROR    | extractor.openaq | Error extrayendo OpenAQ para Los Angeles: No se pudo conectar a https://api.openaq.org/v3/locations tras 3 intentos
+2026-09-16 17:08:03 | INFO     | extractor.openaq | OpenAQ → extrayendo datos para London (GB)
+2026-09-16 17:08:03 | WARNING  | extractor.openaq | OPENAQ_API_KEY no configurada. Regístrate en https://explore.openaq.org/register
+2026-09-16 17:08:03 | WARNING  | extractor.openaq | Intento 1/3 fallido para https://api.openaq.org/v3/locations: 401 Client Error: Unauthorized for url: https://api.openaq.org/v3/locations?coordinates=51.5074%2C-0.1278&radius=25000&limit=10
+2026-09-16 17:08:05 | WARNING  | extractor.openaq | OPENAQ_API_KEY no configurada. Regístrate en https://explore.openaq.org/register
+2026-09-16 17:08:06 | WARNING  | extractor.openaq | Intento 2/3 fallido para https://api.openaq.org/v3/locations: 401 Client Error: Unauthorized for url: https://api.openaq.org/v3/locations?coordinates=51.5074%2C-0.1278&radius=25000&limit=10
+2026-09-16 17:08:10 | WARNING  | extractor.openaq | OPENAQ_API_KEY no configurada. Regístrate en https://explore.openaq.org/register
+2026-09-16 17:08:10 | WARNING  | extractor.openaq | Intento 3/3 fallido para https://api.openaq.org/v3/locations: 401 Client Error: Unauthorized for url: https://api.openaq.org/v3/locations?coordinates=51.5074%2C-0.1278&radius=25000&limit=10
+2026-09-16 17:08:10 | ERROR    | extractor.openaq | Error extrayendo OpenAQ para London: No se pudo conectar a https://api.openaq.org/v3/locations tras 3 intentos
+2026-09-16 17:08:10 | INFO     | extractor.openaq | OpenAQ → extrayendo datos para Sydney (AU)
+2026-09-16 17:08:10 | WARNING  | extractor.openaq | OPENAQ_API_KEY no configurada. Regístrate en https://explore.openaq.org/register
+2026-09-16 17:08:10 | WARNING  | extractor.openaq | Intento 1/3 fallido para https://api.openaq.org/v3/locations: 401 Client Error: Unauthorized for url: https://api.openaq.org/v3/locations?coordinates=-33.8688%2C151.2093&radius=25000&limit=10
+2026-09-16 17:08:12 | WARNING  | extractor.openaq | OPENAQ_API_KEY no configurada. Regístrate en https://explore.openaq.org/register
+2026-09-16 17:08:12 | WARNING  | extractor.openaq | Intento 2/3 fallido para https://api.openaq.org/v3/locations: 401 Client Error: Unauthorized for url: https://api.openaq.org/v3/locations?coordinates=-33.8688%2C151.2093&radius=25000&limit=10
+2026-09-16 17:08:16 | WARNING  | extractor.openaq | OPENAQ_API_KEY no configurada. Regístrate en https://explore.openaq.org/register
+2026-09-16 17:08:17 | WARNING  | extractor.openaq | Intento 3/3 fallido para https://api.openaq.org/v3/locations: 401 Client Error: Unauthorized for url: https://api.openaq.org/v3/locations?coordinates=-33.8688%2C151.2093&radius=25000&limit=10
+2026-09-16 17:08:17 | ERROR    | extractor.openaq | Error extrayendo OpenAQ para Sydney: No se pudo conectar a https://api.openaq.org/v3/locations tras 3 intentos
+2026-09-16 17:08:17 | INFO     | extractor.openaq | OpenAQ → 0 registros extraídos en total
+2026-09-16 17:08:17 | INFO     | loader.sqlite | Calidad del aire → 0/0 filas insertadas
+2026-09-16 17:08:17 | INFO     | main | ─── Iniciando ETL: OPENMETEO
+2026-09-16 17:08:17 | INFO     | extractor.openmeteo | Open-Meteo → extrayendo clima para São Paulo
+2026-09-16 17:08:17 | INFO     | extractor.openmeteo | Open-Meteo → extrayendo clima para Nairobi
+2026-09-16 17:08:18 | INFO     | extractor.openmeteo | Open-Meteo → extrayendo clima para Delhi
+2026-09-16 17:08:19 | INFO     | extractor.openmeteo | Open-Meteo → extrayendo clima para Beijing
+2026-09-16 17:08:19 | INFO     | extractor.openmeteo | Open-Meteo → extrayendo clima para Los Angeles
+2026-09-16 17:08:20 | INFO     | extractor.openmeteo | Open-Meteo → extrayendo clima para London
+2026-09-16 17:08:21 | INFO     | extractor.openmeteo | Open-Meteo → extrayendo clima para Sydney
+2026-09-16 17:08:22 | INFO     | extractor.openmeteo | Open-Meteo → 98 registros extraídos
+2026-09-16 17:08:22 | INFO     | loader.sqlite | Clima → 98/98 filas insertadas
+2026-09-16 17:08:22 | INFO     | main | ─── Iniciando ETL: GBIF
+2026-09-16 17:08:22 | INFO     | extractor.gbif | GBIF → São Paulo / clase: Mammalia
+2026-09-16 17:08:24 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 53116)
+2026-09-16 17:08:24 | INFO     | extractor.gbif | GBIF → São Paulo / clase: Aves
+2026-09-16 17:08:26 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 53116)
+2026-09-16 17:08:27 | INFO     | extractor.gbif | GBIF → São Paulo / clase: Reptilia
+2026-09-16 17:08:28 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 53116)
+2026-09-16 17:08:29 | INFO     | extractor.gbif | GBIF → São Paulo / clase: Amphibia
+2026-09-16 17:08:31 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 53116)
+2026-09-16 17:08:31 | INFO     | extractor.gbif | GBIF → São Paulo / clase: Insecta
+2026-09-16 17:08:33 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 53116)
+2026-09-16 17:08:34 | INFO     | extractor.gbif | GBIF → Nairobi / clase: Mammalia
+2026-09-16 17:08:35 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 35066)
+2026-09-16 17:08:36 | INFO     | extractor.gbif | GBIF → Nairobi / clase: Aves
+2026-09-16 17:08:38 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 35066)
+2026-09-16 17:08:38 | INFO     | extractor.gbif | GBIF → Nairobi / clase: Reptilia
+2026-09-16 17:08:40 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 35066)
+2026-09-16 17:08:40 | INFO     | extractor.gbif | GBIF → Nairobi / clase: Amphibia
+2026-09-16 17:08:42 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 35066)
+2026-09-16 17:08:42 | INFO     | extractor.gbif | GBIF → Nairobi / clase: Insecta
+2026-09-16 17:08:44 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 35066)
+2026-09-16 17:08:44 | INFO     | extractor.gbif | GBIF → Delhi / clase: Mammalia
+2026-09-16 17:08:46 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 18919)
+2026-09-16 17:08:47 | INFO     | extractor.gbif | GBIF → Delhi / clase: Aves
+2026-09-16 17:08:49 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 18919)
+2026-09-16 17:08:49 | INFO     | extractor.gbif | GBIF → Delhi / clase: Reptilia
+2026-09-16 17:08:51 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 18919)
+2026-09-16 17:08:51 | INFO     | extractor.gbif | GBIF → Delhi / clase: Amphibia
+2026-09-16 17:08:53 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 18919)
+2026-09-16 17:08:54 | INFO     | extractor.gbif | GBIF → Delhi / clase: Insecta
+2026-09-16 17:08:55 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 18919)
+2026-09-16 17:08:56 | INFO     | extractor.gbif | GBIF → Beijing / clase: Mammalia
+2026-09-16 17:08:58 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 44847)
+2026-09-16 17:08:58 | INFO     | extractor.gbif | GBIF → Beijing / clase: Aves
+2026-09-16 17:09:00 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 44847)
+2026-09-16 17:09:00 | INFO     | extractor.gbif | GBIF → Beijing / clase: Reptilia
+2026-09-16 17:09:03 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 44847)
+2026-09-16 17:09:04 | INFO     | extractor.gbif | GBIF → Beijing / clase: Amphibia
+2026-09-16 17:09:06 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 44847)
+2026-09-16 17:09:06 | INFO     | extractor.gbif | GBIF → Beijing / clase: Insecta
+2026-09-16 17:09:08 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 44847)
+2026-09-16 17:09:09 | INFO     | extractor.gbif | GBIF → Los Angeles / clase: Mammalia
+2026-09-16 17:09:10 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 438570)
+2026-09-16 17:09:11 | INFO     | extractor.gbif | GBIF → Los Angeles / clase: Aves
+2026-09-16 17:09:12 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 438570)
+2026-09-16 17:09:13 | INFO     | extractor.gbif | GBIF → Los Angeles / clase: Reptilia
+2026-09-16 17:09:15 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 438570)
+2026-09-16 17:09:15 | INFO     | extractor.gbif | GBIF → Los Angeles / clase: Amphibia
+2026-09-16 17:09:17 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 438570)
+2026-09-16 17:09:17 | INFO     | extractor.gbif | GBIF → Los Angeles / clase: Insecta
+2026-09-16 17:09:19 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 438570)
+2026-09-16 17:09:20 | INFO     | extractor.gbif | GBIF → London / clase: Mammalia
+2026-09-16 17:09:21 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 525241)
+2026-09-16 17:09:22 | INFO     | extractor.gbif | GBIF → London / clase: Aves
+2026-09-16 17:09:24 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 525241)
+2026-09-16 17:09:24 | INFO     | extractor.gbif | GBIF → London / clase: Reptilia
+2026-09-16 17:09:26 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 525241)
+2026-09-16 17:09:27 | INFO     | extractor.gbif | GBIF → London / clase: Amphibia
+2026-09-16 17:09:28 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 525241)
+2026-09-16 17:09:29 | INFO     | extractor.gbif | GBIF → London / clase: Insecta
+2026-09-16 17:09:30 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 525241)
+2026-09-16 17:09:31 | INFO     | extractor.gbif | GBIF → Sydney / clase: Mammalia
+2026-09-16 17:09:33 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 424958)
+2026-09-16 17:09:33 | INFO     | extractor.gbif | GBIF → Sydney / clase: Aves
+2026-09-16 17:09:35 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 424958)
+2026-09-16 17:09:35 | INFO     | extractor.gbif | GBIF → Sydney / clase: Reptilia
+2026-09-16 17:09:37 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 424958)
+2026-09-16 17:09:38 | INFO     | extractor.gbif | GBIF → Sydney / clase: Amphibia
+2026-09-16 17:09:39 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 424958)
+2026-09-16 17:09:40 | INFO     | extractor.gbif | GBIF → Sydney / clase: Insecta
+2026-09-16 17:09:42 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 424958)
+2026-09-16 17:09:42 | INFO     | extractor.gbif | GBIF → 3500 registros extraídos en total
+2026-09-16 17:09:42 | INFO     | loader.sqlite | Biodiversidad → 700/3500 filas insertadas
+2026-09-16 17:09:42 | INFO     | main | ─── Iniciando ETL: NASAFIRMS
+2026-09-16 17:09:42 | INFO     | extractor.nasafirms | NASA FIRMS → descargando CSV global de incendios activos
+2026-09-16 17:09:45 | INFO     | extractor.nasafirms | NASA FIRMS → 95712 incendios extraídos (confianza nominal/alta)
+2026-09-16 17:09:45 | INFO     | loader.sqlite | Incendios → 95712/95712 filas insertadas
+2026-09-16 17:09:45 | INFO     | main | ============================================================
+2026-09-16 17:09:45 | INFO     | main | PIPELINE COMPLETADO en 135.8 segundos
+2026-09-16 17:09:45 | INFO     | main | Resumen:
+2026-09-16 17:09:45 | INFO     | main |   ✓ openaq       → 0 extraídos, 0 insertados
+2026-09-16 17:09:45 | INFO     | main |   ✓ openmeteo    → 98 extraídos, 98 insertados
+2026-09-16 17:09:45 | INFO     | main |   ✓ gbif         → 3500 extraídos, 700 insertados
+2026-09-16 17:09:45 | INFO     | main |   ✓ nasafirms    → 95712 extraídos, 95712 insertados
+2026-09-16 17:09:45 | INFO     | main | ============================================================
+2026-09-16 18:12:34 | INFO     | main | ============================================================
+2026-09-16 18:12:34 | INFO     | main | INICIO DEL PIPELINE — 2026-09-17 00:12:34 UTC
+2026-09-16 18:12:34 | INFO     | main | ============================================================
+2026-09-16 18:12:34 | INFO     | database | Base de datos inicializada correctamente en /Users/anthonyvarela/Documents/UCM/FTM/pipeline/biodiversity_monitor.db
+2026-09-16 18:12:34 | INFO     | main | ─── Iniciando ETL: OPENAQ
+2026-09-16 18:12:34 | INFO     | extractor.openaq | OpenAQ → extrayendo datos para São Paulo (BR)
+2026-09-16 18:12:35 | DEBUG    | extractor.openaq |   → 10 estaciones encontradas
+2026-09-16 18:12:40 | INFO     | extractor.openaq | OpenAQ → extrayendo datos para Nairobi (KE)
+2026-09-16 18:12:41 | DEBUG    | extractor.openaq |   → 10 estaciones encontradas
+2026-09-16 18:12:47 | INFO     | extractor.openaq | OpenAQ → extrayendo datos para Delhi (IN)
+2026-09-16 18:12:49 | DEBUG    | extractor.openaq |   → 10 estaciones encontradas
+2026-09-16 18:12:55 | INFO     | extractor.openaq | OpenAQ → extrayendo datos para Beijing (CN)
+2026-09-16 18:12:56 | DEBUG    | extractor.openaq |   → 10 estaciones encontradas
+2026-09-16 18:13:02 | INFO     | extractor.openaq | OpenAQ → extrayendo datos para Los Angeles (US)
+2026-09-16 18:13:03 | DEBUG    | extractor.openaq |   → 10 estaciones encontradas
+2026-09-16 18:13:09 | INFO     | extractor.openaq | OpenAQ → extrayendo datos para London (GB)
+2026-09-16 18:13:10 | DEBUG    | extractor.openaq |   → 10 estaciones encontradas
+2026-09-16 18:13:17 | INFO     | extractor.openaq | OpenAQ → extrayendo datos para Sydney (AU)
+2026-09-16 18:13:18 | DEBUG    | extractor.openaq |   → 10 estaciones encontradas
+2026-09-16 18:13:24 | INFO     | extractor.openaq | OpenAQ → 115 registros extraídos en total
+2026-09-16 18:13:24 | INFO     | loader.sqlite | Calidad del aire → 81/115 filas insertadas
+2026-09-16 18:13:24 | INFO     | main | ─── Iniciando ETL: OPENMETEO
+2026-09-16 18:13:24 | INFO     | extractor.openmeteo | Open-Meteo → extrayendo clima para São Paulo
+2026-09-16 18:13:26 | INFO     | extractor.openmeteo | Open-Meteo → extrayendo clima para Nairobi
+2026-09-16 18:13:28 | INFO     | extractor.openmeteo | Open-Meteo → extrayendo clima para Delhi
+2026-09-16 18:13:30 | INFO     | extractor.openmeteo | Open-Meteo → extrayendo clima para Beijing
+2026-09-16 18:13:31 | INFO     | extractor.openmeteo | Open-Meteo → extrayendo clima para Los Angeles
+2026-09-16 18:13:33 | INFO     | extractor.openmeteo | Open-Meteo → extrayendo clima para London
+2026-09-16 18:13:35 | INFO     | extractor.openmeteo | Open-Meteo → extrayendo clima para Sydney
+2026-09-16 18:13:37 | INFO     | extractor.openmeteo | Open-Meteo → 98 registros extraídos
+2026-09-16 18:13:37 | INFO     | loader.sqlite | Clima → 98/98 filas insertadas
+2026-09-16 18:13:37 | INFO     | main | ─── Iniciando ETL: GBIF
+2026-09-16 18:13:37 | INFO     | extractor.gbif | GBIF → São Paulo / clase: Mammalia
+2026-09-16 18:13:43 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 53116)
+2026-09-16 18:13:44 | INFO     | extractor.gbif | GBIF → São Paulo / clase: Aves
+2026-09-16 18:13:48 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 53116)
+2026-09-16 18:13:49 | INFO     | extractor.gbif | GBIF → São Paulo / clase: Reptilia
+2026-09-16 18:13:53 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 53116)
+2026-09-16 18:13:53 | INFO     | extractor.gbif | GBIF → São Paulo / clase: Amphibia
+2026-09-16 18:13:56 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 53116)
+2026-09-16 18:13:57 | INFO     | extractor.gbif | GBIF → São Paulo / clase: Insecta
+2026-09-16 18:14:01 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 53116)
+2026-09-16 18:14:01 | INFO     | extractor.gbif | GBIF → Nairobi / clase: Mammalia
+2026-09-16 18:14:05 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 35066)
+2026-09-16 18:14:06 | INFO     | extractor.gbif | GBIF → Nairobi / clase: Aves
+2026-09-16 18:14:10 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 35066)
+2026-09-16 18:14:11 | INFO     | extractor.gbif | GBIF → Nairobi / clase: Reptilia
+2026-09-16 18:14:15 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 35066)
+2026-09-16 18:14:15 | INFO     | extractor.gbif | GBIF → Nairobi / clase: Amphibia
+2026-09-16 18:14:19 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 35066)
+2026-09-16 18:14:20 | INFO     | extractor.gbif | GBIF → Nairobi / clase: Insecta
+2026-09-16 18:14:24 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 35066)
+2026-09-16 18:14:24 | INFO     | extractor.gbif | GBIF → Delhi / clase: Mammalia
+2026-09-16 18:14:29 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 18919)
+2026-09-16 18:14:29 | INFO     | extractor.gbif | GBIF → Delhi / clase: Aves
+2026-09-16 18:14:34 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 18919)
+2026-09-16 18:14:34 | INFO     | extractor.gbif | GBIF → Delhi / clase: Reptilia
+2026-09-16 18:14:38 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 18919)
+2026-09-16 18:14:39 | INFO     | extractor.gbif | GBIF → Delhi / clase: Amphibia
+2026-09-16 18:14:43 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 18919)
+2026-09-16 18:14:43 | INFO     | extractor.gbif | GBIF → Delhi / clase: Insecta
+2026-09-16 18:14:48 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 18919)
+2026-09-16 18:14:49 | INFO     | extractor.gbif | GBIF → Beijing / clase: Mammalia
+2026-09-16 18:14:54 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 44847)
+2026-09-16 18:14:54 | INFO     | extractor.gbif | GBIF → Beijing / clase: Aves
+2026-09-16 18:14:59 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 44847)
+2026-09-16 18:15:00 | INFO     | extractor.gbif | GBIF → Beijing / clase: Reptilia
+2026-09-16 18:15:04 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 44847)
+2026-09-16 18:15:04 | INFO     | extractor.gbif | GBIF → Beijing / clase: Amphibia
+2026-09-16 18:15:07 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 44847)
+2026-09-16 18:15:07 | INFO     | extractor.gbif | GBIF → Beijing / clase: Insecta
+2026-09-16 18:15:11 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 44847)
+2026-09-16 18:15:11 | INFO     | extractor.gbif | GBIF → Los Angeles / clase: Mammalia
+2026-09-16 18:15:15 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 438570)
+2026-09-16 18:15:16 | INFO     | extractor.gbif | GBIF → Los Angeles / clase: Aves
+2026-09-16 18:15:25 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 438570)
+2026-09-16 18:15:26 | INFO     | extractor.gbif | GBIF → Los Angeles / clase: Reptilia
+2026-09-16 18:15:30 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 438570)
+2026-09-16 18:15:30 | INFO     | extractor.gbif | GBIF → Los Angeles / clase: Amphibia
+2026-09-16 18:15:35 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 438570)
+2026-09-16 18:15:35 | INFO     | extractor.gbif | GBIF → Los Angeles / clase: Insecta
+2026-09-16 18:15:40 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 438570)
+2026-09-16 18:15:40 | INFO     | extractor.gbif | GBIF → London / clase: Mammalia
+2026-09-16 18:15:45 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 525241)
+2026-09-16 18:15:45 | INFO     | extractor.gbif | GBIF → London / clase: Aves
+2026-09-16 18:15:50 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 525241)
+2026-09-16 18:15:50 | INFO     | extractor.gbif | GBIF → London / clase: Reptilia
+2026-09-16 18:15:54 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 525241)
+2026-09-16 18:15:54 | INFO     | extractor.gbif | GBIF → London / clase: Amphibia
+2026-09-16 18:15:58 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 525241)
+2026-09-16 18:15:58 | INFO     | extractor.gbif | GBIF → London / clase: Insecta
+2026-09-16 18:16:03 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 525241)
+2026-09-16 18:16:03 | INFO     | extractor.gbif | GBIF → Sydney / clase: Mammalia
+2026-09-16 18:16:07 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 424958)
+2026-09-16 18:16:07 | INFO     | extractor.gbif | GBIF → Sydney / clase: Aves
+2026-09-16 18:16:11 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 424958)
+2026-09-16 18:16:11 | INFO     | extractor.gbif | GBIF → Sydney / clase: Reptilia
+2026-09-16 18:16:16 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 424958)
+2026-09-16 18:16:17 | INFO     | extractor.gbif | GBIF → Sydney / clase: Amphibia
+2026-09-16 18:16:22 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 424958)
+2026-09-16 18:16:22 | INFO     | extractor.gbif | GBIF → Sydney / clase: Insecta
+2026-09-16 18:16:27 | DEBUG    | extractor.gbif |   → 100 ocurrencias encontradas (total: 424958)
+2026-09-16 18:16:27 | INFO     | extractor.gbif | GBIF → 3500 registros extraídos en total
+2026-09-16 18:16:27 | INFO     | loader.sqlite | Biodiversidad → 700/3500 filas insertadas
+2026-09-16 18:16:27 | INFO     | main | ─── Iniciando ETL: NASAFIRMS
+2026-09-16 18:16:27 | INFO     | extractor.nasafirms | NASA FIRMS → descargando CSV global de incendios activos
+2026-09-16 18:16:40 | INFO     | extractor.nasafirms | NASA FIRMS → 95917 incendios extraídos (confianza nominal/alta)
+2026-09-16 18:16:40 | INFO     | loader.sqlite | Incendios → 95917/95917 filas insertadas
+2026-09-16 18:16:40 | INFO     | main | ============================================================
+2026-09-16 18:16:40 | INFO     | main | PIPELINE COMPLETADO en 246.5 segundos
+2026-09-16 18:16:40 | INFO     | main | Resumen:
+2026-09-16 18:16:40 | INFO     | main |   ✓ openaq       → 115 extraídos, 81 insertados
+2026-09-16 18:16:40 | INFO     | main |   ✓ openmeteo    → 98 extraídos, 98 insertados
+2026-09-16 18:16:40 | INFO     | main |   ✓ gbif         → 3500 extraídos, 700 insertados
+2026-09-16 18:16:40 | INFO     | main |   ✓ nasafirms    → 95917 extraídos, 95917 insertados
+2026-09-16 18:16:40 | INFO     | main | ============================================================
